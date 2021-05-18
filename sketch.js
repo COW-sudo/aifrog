@@ -12,7 +12,7 @@ This example uses p5 preload function to create the classifier
 // Classifier Variable
 let classifier;
 // Model URL
-let imageModelURL = 'https://cow-sudo.github.io/food/';
+let imageModelURL = 'https://cow-sudo.github.io/aifrog/';
 
 // Video
 let video;
@@ -89,7 +89,7 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
   label = results[0].label;
-  ThunkableWebviewerExtension.postMessage(label);
+  ThunkableWebviewerExtension.postMessage(label);;
   // Classifiy again!
   classifyVideo();
 }
